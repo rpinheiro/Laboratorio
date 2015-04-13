@@ -77,6 +77,22 @@
             @Html.ValidationMessageFor(model => model.Email)
         </div>
 
+        <div class="editor-label">
+            Telefone celular
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telefones.Where(t => t.TipoTelefone == LabVet.Models.TipoTelefone.Celular).FirstOrDefault().NumeroTelefone)
+            @*@Html.ValidationMessageFor(model => model.Email)*@
+        </div>
+
+        <div class="editor-label">
+            Telefone residencial
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telefones.Where(t => t.TipoTelefone == LabVet.Models.TipoTelefone.Residencial).FirstOrDefault().NumeroTelefone)
+            @*@Html.ValidationMessageFor(model => model.Email)*@
+        </div>
+
         <p>
             <input type="submit" value="Salvar" />
         </p>

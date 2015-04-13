@@ -190,7 +190,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\DBContext\BaseContexto.cs" />
+    <Compile Include="Models\DBContext\ProprietarioTelefoneContexto.cs" />
+    <Compile Include="Models\DBContext\TelefoneContexto.cs" />
     <Compile Include="Models\DBContext\VeterinarioContexto.cs" />
+    <Compile Include="Models\Telefone.cs" />
     <Compile Include="Models\Veterinario.cs" />
     <Compile Include="Models\DBContext\ProprietarioContexto.cs" />
     <Compile Include="Models\Proprietario.cs" />
