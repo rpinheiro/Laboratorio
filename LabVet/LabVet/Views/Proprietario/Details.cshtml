@@ -1,0 +1,71 @@
+﻿@model LabVet.Models.Proprietario
+
+@{
+    ViewBag.Title = "Detalhes de Proprietário";
+}
+
+<h2>Detalhes de Proprietário</h2>
+
+<fieldset>
+    <legend>Proprietario</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Logradouro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Logradouro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Numero)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Numero)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cep)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cep)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Bairro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Bairro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Municipio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Municipio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Estado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Estado)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Voltar para a tela anterior", "Index")
+</p>

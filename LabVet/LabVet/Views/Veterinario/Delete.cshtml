@@ -1,0 +1,40 @@
+﻿@model LabVet.Models.Veterinario
+
+@{
+    ViewBag.Title = "Remover cadastro do Veterinario";
+}
+
+<h2>Remover cadastro do Veterinário</h2>
+
+<h3>Você tem certeza que deseja remover este Veterinário?</h3>
+<fieldset>
+    <legend>Veterinário</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Crmv)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Crmv)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Apagar" /> |
+        @Html.ActionLink("Voltar para a tela anterior", "Index")
+    </p>
+}
