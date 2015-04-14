@@ -14,7 +14,7 @@ namespace LabVet.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    [Table("Pessoas")]
     public abstract class Pessoa
     {
         public Pessoa()
