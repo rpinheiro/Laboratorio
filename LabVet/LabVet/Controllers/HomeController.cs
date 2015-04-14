@@ -17,13 +17,6 @@ namespace LabVet.Controllers
     {
         public ActionResult Index()
         {
-            ProprietarioDB dbPessoa = new ProprietarioDB();
-            //dbPessoa.Pessoas.Add(new Proprietario() { Nome = "Rafael de Araújo" });
-            //dbPessoa.Pessoas.Add(new Proprietario() { Nome = "Julia" });
-            //dbPessoa.Pessoas.Add(new Proprietario() { Nome = "Mariana" });
-            //dbPessoa.SaveChanges();
-
-            IList<Proprietario> listaDePessoas = dbPessoa.Proprietarios.ToList();
             
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 

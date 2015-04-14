@@ -29,6 +29,6 @@ namespace LabVet.Models
         public string NumeroTelefone { get; set; }
         public TipoTelefone TipoTelefone { get; set; }       
     
-        public virtual Proprietario Proprietario { get; set; }        
+        public virtual Pessoa Pessoa { get; set; }        
     }
 }

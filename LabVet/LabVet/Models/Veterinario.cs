@@ -8,13 +8,9 @@ using System.Web;
 namespace LabVet.Models
 {
     [Table("Veterinario")]
-    public class Veterinario
+    public class Veterinario: Pessoa
     {
-        [Key]
-        public int ID { get; set; }
-        public string Nome { get; set; }
-        public string Crmv { get; set; }
-        public string Email { get; set; }
         
+        public string Crmv { get; set; }
     }
 }

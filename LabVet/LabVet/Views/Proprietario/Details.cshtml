@@ -1,19 +1,19 @@
 ﻿@model LabVet.Models.Proprietario
 
 @{
-    ViewBag.Title = "Detalhes de Proprietário";
+    ViewBag.Title = "Details";
 }
 
-<h2>Detalhes de Proprietário</h2>
+<h2>Details</h2>
 
 <fieldset>
     <legend>Proprietario</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Nome)
+         @Html.DisplayNameFor(model => model.nome)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Nome)
+        @Html.DisplayFor(model => model.nome)
     </div>
 
     <div class="display-label">
@@ -24,48 +24,48 @@
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Numero)
+         @Html.DisplayNameFor(model => model.numero)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Numero)
+        @Html.DisplayFor(model => model.numero)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Cep)
+         @Html.DisplayNameFor(model => model.cep)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Cep)
+        @Html.DisplayFor(model => model.cep)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Bairro)
+         @Html.DisplayNameFor(model => model.bairro)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Bairro)
+        @Html.DisplayFor(model => model.bairro)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Municipio)
+         @Html.DisplayNameFor(model => model.municipio)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Municipio)
+        @Html.DisplayFor(model => model.municipio)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Estado)
+         @Html.DisplayNameFor(model => model.estado)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Estado)
+        @Html.DisplayFor(model => model.estado)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Email)
+         @Html.DisplayNameFor(model => model.email)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Email)
+        @Html.DisplayFor(model => model.email)
     </div>
 </fieldset>
 <p>
-    @Html.ActionLink("Editar", "Edit", new { id=Model.ID }) |
-    @Html.ActionLink("Voltar para a tela anterior", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id=Model.PessoaID }) |
+    @Html.ActionLink("Back to List", "Index")
 </p>

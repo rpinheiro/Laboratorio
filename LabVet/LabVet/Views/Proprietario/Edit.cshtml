@@ -1,26 +1,26 @@
 ﻿@model LabVet.Models.Proprietario
 
 @{
-    ViewBag.Title = "Editar Proprietário";
+    ViewBag.Title = "Edit";
 }
 
-<h2>Editar Proprietário</h2>
+<h2>Edit</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Proprietário</legend>
+        <legend>Proprietario</legend>
 
-        @Html.HiddenFor(model => model.ID)
+        @Html.HiddenFor(model => model.PessoaID)
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Nome)
+            @Html.LabelFor(model => model.nome)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Nome)
-            @Html.ValidationMessageFor(model => model.Nome)
+            @Html.EditorFor(model => model.nome)
+            @Html.ValidationMessageFor(model => model.nome)
         </div>
 
         <div class="editor-label">
@@ -32,61 +32,61 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Numero)
+            @Html.LabelFor(model => model.numero)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Numero)
-            @Html.ValidationMessageFor(model => model.Numero)
+            @Html.EditorFor(model => model.numero)
+            @Html.ValidationMessageFor(model => model.numero)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Cep)
+            @Html.LabelFor(model => model.cep)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Cep)
-            @Html.ValidationMessageFor(model => model.Cep)
+            @Html.EditorFor(model => model.cep)
+            @Html.ValidationMessageFor(model => model.cep)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Bairro)
+            @Html.LabelFor(model => model.bairro)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Bairro)
-            @Html.ValidationMessageFor(model => model.Bairro)
+            @Html.EditorFor(model => model.bairro)
+            @Html.ValidationMessageFor(model => model.bairro)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Municipio)
+            @Html.LabelFor(model => model.municipio)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Municipio)
-            @Html.ValidationMessageFor(model => model.Municipio)
+            @Html.EditorFor(model => model.municipio)
+            @Html.ValidationMessageFor(model => model.municipio)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Estado)
+            @Html.LabelFor(model => model.estado)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Estado)
-            @Html.ValidationMessageFor(model => model.Estado)
+            @Html.EditorFor(model => model.estado)
+            @Html.ValidationMessageFor(model => model.estado)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Email)
+            @Html.LabelFor(model => model.email)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Email)
-            @Html.ValidationMessageFor(model => model.Email)
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
         </div>
 
         <p>
-            <input type="submit" value="Salvar" />
+            <input type="submit" value="Save" />
         </p>
     </fieldset>
 }
 
 <div>
-    @Html.ActionLink("Voltar para a tela anterior", "Index")
+    @Html.ActionLink("Back to List", "Index")
 </div>
 
 @section Scripts {

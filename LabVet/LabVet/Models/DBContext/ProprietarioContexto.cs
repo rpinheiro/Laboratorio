@@ -4,6 +4,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using LabVet.Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
+
 
 namespace LabVet.Models.DBContext
 {
@@ -14,7 +16,12 @@ namespace LabVet.Models.DBContext
         {
         }
 
-        public DbSet<Proprietario> Proprietarios { get; set; }
+        public DbSet<Pessoa> Pessoas { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
 
     }
 }

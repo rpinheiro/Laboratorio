@@ -1,45 +1,39 @@
 ﻿@model IEnumerable<LabVet.Models.Proprietario>
 
 @{
-    ViewBag.Title = "Cadastro de proprietários";
+    ViewBag.Title = "Index";
 }
 
-<h2>Cadastro de proprietários</h2>
+<h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Adicionar novo proprietario", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Nome)
+            @Html.DisplayNameFor(model => model.nome)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Logradouro)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Numero)
+            @Html.DisplayNameFor(model => model.numero)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Cep)
+            @Html.DisplayNameFor(model => model.cep)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Bairro)
+            @Html.DisplayNameFor(model => model.bairro)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Municipio)
+            @Html.DisplayNameFor(model => model.municipio)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Estado)
+            @Html.DisplayNameFor(model => model.estado)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            Telefone celular
-        </th>
-        <th>
-            TelefoneResidencial
+            @Html.DisplayNameFor(model => model.email)
         </th>
         <th></th>
     </tr>
@@ -47,41 +41,33 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Nome)
+            @Html.DisplayFor(modelItem => item.nome)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Logradouro)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Numero)
+            @Html.DisplayFor(modelItem => item.numero)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Cep)
+            @Html.DisplayFor(modelItem => item.cep)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Bairro)
+            @Html.DisplayFor(modelItem => item.bairro)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Municipio)
+            @Html.DisplayFor(modelItem => item.municipio)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Estado)
+            @Html.DisplayFor(modelItem => item.estado)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-
-        <td>
-            @Html.DisplayFor(modelItem => item.Telefones.Where(t => t.TipoTelefone == LabVet.Models.TipoTelefone.Celular).FirstOrDefault().NumeroTelefone)
-        </td>
-
-        <td>
-            @Html.DisplayFor(modelItem => item.Telefones.Where(t => t.TipoTelefone == LabVet.Models.TipoTelefone.Residencial).FirstOrDefault().NumeroTelefone)
+            @Html.DisplayFor(modelItem => item.email)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Detalhes", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Apagar", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edit", "Edit", new { id=item.PessoaID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PessoaID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PessoaID })
         </td>
     </tr>
 }
