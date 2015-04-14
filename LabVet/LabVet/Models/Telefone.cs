@@ -11,6 +11,7 @@ namespace LabVet.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public enum TipoTelefone
     {
@@ -18,6 +19,7 @@ namespace LabVet.Models
         Celular
     }
     
+    [Table("Telefone")]
     public partial class Telefone
     {
         public Telefone()

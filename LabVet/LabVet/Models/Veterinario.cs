@@ -7,7 +7,7 @@ using System.Web;
 
 namespace LabVet.Models
 {
-    [Table("Veterinarios")]
+    [Table("Veterinario")]
     public class Veterinario: Pessoa
     {
         

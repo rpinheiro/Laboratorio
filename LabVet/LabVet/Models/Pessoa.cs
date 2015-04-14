@@ -14,7 +14,7 @@ namespace LabVet.Models
 {
     using System;
     using System.Collections.Generic;
-    [Table("Pessoas")]
+    [Table("Pessoa")]
     public abstract class Pessoa
     {
         public Pessoa()
@@ -31,9 +31,7 @@ namespace LabVet.Models
         public string municipio { get; set; }
         public string estado { get; set; }
         public string email { get; set; }
-    
-        public virtual ICollection<Proprietario> Proprietarios { get; set; }        
-        public virtual ICollection<Veterinario> Veterinarios { get; set; }
+
         public virtual ICollection<Telefone> Telefones { get; set; }
     }
 }

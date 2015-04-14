@@ -15,17 +15,13 @@ namespace LabVet.Models.DBContext
         }
 
         public DbSet<Pessoa> Pessoas { get; set; }
-        public DbSet<Proprietario> Proprietarios { get; set; }
-        public DbSet<Veterinario> Veterinarios { get; set; }
+        
         
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
-            modelBuilder.Conventions.Remove< PluralizingTableNameConvention>();
-
-            modelBuilder.Entity<Proprietario>().ToTable("Proprietario");
-            modelBuilder.Entity<Veterinario>().ToTable("Veterinario");
+        
 
         }
 
