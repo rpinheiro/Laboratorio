@@ -185,13 +185,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClinicaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProprietarioController.cs" />
+    <Compile Include="Controllers\VeterinarioController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Clinica.cs" />
     <Compile Include="Models\DBContext\BaseContexto.cs" />
+    <Compile Include="Models\DBContext\ClinicaContexto.cs" />
     <Compile Include="Models\DBContext\PessoaContexto.cs" />
     <Compile Include="Models\DBContext\ProprietarioTelefoneContexto.cs" />
     <Compile Include="Models\DBContext\TelefoneContexto.cs" />
@@ -316,6 +321,18 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Proprietario\Index.cshtml" />
+    <Content Include="Views\Proprietario\Create.cshtml" />
+    <Content Include="Views\Proprietario\Edit.cshtml" />
+    <Content Include="Views\Proprietario\Delete.cshtml" />
+    <Content Include="Views\Veterinario\Create.cshtml" />
+    <Content Include="Views\Veterinario\Delete.cshtml" />
+    <Content Include="Views\Veterinario\Edit.cshtml" />
+    <Content Include="Views\Veterinario\Index.cshtml" />
+    <Content Include="Views\Clinica\Create.cshtml" />
+    <Content Include="Views\Clinica\Delete.cshtml" />
+    <Content Include="Views\Clinica\Edit.cshtml" />
+    <Content Include="Views\Clinica\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,75 @@
+﻿@model LabVet.Models.Proprietario
+
+@{
+    ViewBag.Title = "Remover Proprietário";
+}
+
+<h2>Remover Proprietário</h2>
+
+<h3>Você tem certeza que deseja remover este Proprietário</h3>
+<fieldset>
+    <legend>Proprietario</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Logradouro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Logradouro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.numero)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.numero)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.cep)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.cep)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.bairro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.bairro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.municipio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.municipio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.estado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Apagar" /> |
+        @Html.ActionLink("Voltar para a tela anterior", "Index")
+    </p>
+}

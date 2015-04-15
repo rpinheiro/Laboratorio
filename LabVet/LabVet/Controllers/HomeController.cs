@@ -17,7 +17,14 @@ namespace LabVet.Controllers
     {
         public ActionResult Index()
         {
-            
+            //ClinicaDB db = new ClinicaDB();
+            //Veterinario v = new Veterinario() { nome = "teste", Crmv="123"};
+            //IList<Veterinario> listaV = new List<Veterinario>();
+            //listaV.Add(v);
+
+            //db.Clinicas.Add(new Clinica() { nome= "clinicao", Veterinarios = listaV});
+            //db.SaveChanges();
+            //var lista = db.Clinicas.ToList();
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();

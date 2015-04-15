@@ -14,16 +14,16 @@ namespace LabVet.Models
 {
     using System;
     using System.Collections.Generic;
-    [Table("Pessoa")]
-    public abstract class Pessoa
+    [Table("Clinica")]
+    public class Clinica
     {
-        public Pessoa()
+        public Clinica()
         {
-            Telefones = new HashSet<Telefone>();
+            Veterinarios = new HashSet<Veterinario>();
         }
     
         [Key]
-        public int PessoaID { get; set; }
+        public int ClinicaID { get; set; }
         public string nome { get; set; }
         public string Logradouro { get; set; }
         public int? numero { get; set; }
@@ -33,6 +33,7 @@ namespace LabVet.Models
         public string estado { get; set; }
         public string email { get; set; }
 
-        public virtual ICollection<Telefone> Telefones { get; set; }
+        [ForeignKey("Veterinario")]
+        public virtual ICollection<Veterinario> Veterinarios { get; set; }
     }
 }

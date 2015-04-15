@@ -29,6 +29,7 @@ namespace LabVet
             Database.SetInitializer<ProprietarioDB>(null);
             Database.SetInitializer<VeterinarioDB>(null);
             Database.SetInitializer<PessoaDB>(null);
+            Database.SetInitializer<ClinicaDB>(null);
         }
     }
 }
